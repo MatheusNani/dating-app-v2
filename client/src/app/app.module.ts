@@ -20,6 +20,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { TestErrorsComponent } from './Errors/test-errors/test-errors.component';
 import { NotFoundComponent } from './Errors/not-found/not-found.component';
 import { ServerErrorComponent } from './Errors/server-error/server-error.component';
+import { MemberCardComponent } from './components/members/member-card/member-card.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ServerErrorComponent } from './Errors/server-error/server-error.compone
     MessagesComponent,
     TestErrorsComponent,
     NotFoundComponent,
-    ServerErrorComponent
+    ServerErrorComponent,
+    MemberCardComponent
   ],
   imports: [
     BrowserModule,
