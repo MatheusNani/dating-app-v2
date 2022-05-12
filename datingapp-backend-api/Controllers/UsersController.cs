@@ -16,8 +16,6 @@ namespace API.Controllers
     [Authorize]
     public class UsersController : BaseApiController
     {
-        private readonly DataContext _context;
-
         public IUserRepository _userRepository { get; }
         public IMapper _mapper { get; }
 
