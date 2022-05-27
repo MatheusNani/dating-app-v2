@@ -1,8 +1,6 @@
-﻿using API.Extensions;
+﻿using API.Enums;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace API.Entities
 {
@@ -24,7 +22,7 @@ namespace API.Entities
 
         public DateTime LastActive { get; set; } = DateTime.Now;
 
-        public string Gender { get; set; }
+        public EGender Gender { get; set; }
 
         public string Introduction { get; set; }
 
@@ -37,5 +35,8 @@ namespace API.Entities
         public string City { get; set; }
 
         public ICollection<Photo> Photos { get; set; }
+
+        public bool Active { get; set; }
+
     }
 }
